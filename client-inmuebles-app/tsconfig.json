@@ -2,7 +2,22 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    // cambios //////////////////////////////////
+    "baseUrl": "src",
+    // para hacer abreviaciones en las importaciones
+    "paths": {
+      "@app/*":[
+        "app/*"
+      ],
+      "@src/*":[
+        "../src/*"
+      ]
+
+    },
+    // para que el proyecto pueda importar valores en Json
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    ////////////////////////////////////////////
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
