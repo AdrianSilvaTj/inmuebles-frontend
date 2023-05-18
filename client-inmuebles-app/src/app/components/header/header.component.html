@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <!-- insertar un boton de menu de google font icon -->
+  <button mat-icon-button (click)="onMenuToggleDispatch()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Inmuebles Store</span>
+  <!-- fxFlex, libreria, para ubicar los elementos -->
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout="row" fxLayoutGap="10px" class="navegacion-menu">
+      <li><a routerLink="auth/registration">Registrar</a></li>
+      <li><a routerLink="auth/login">Login</a></li>
+      <li><a routerLink="/">Home</a></li>
+    </ul>
+  </div>
+</mat-toolbar>
